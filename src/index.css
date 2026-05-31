@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,750;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Font Types */
+.font-sans-inter {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+.font-display-space {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.font-mono-jb {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.font-serif-playfair {
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+/* Font Size Modifiers */
+.size-small {
+  font-size: 0.875rem; /* 14px */
+}
+.size-small h1 { font-size: 1.5rem; }
+.size-small h2 { font-size: 1.25rem; }
+.size-small h3 { font-size: 1.05rem; }
+.size-small p, .size-small span, .size-small td, .size-small input, .size-small label, .size-small select, .size-small button {
+  font-size: 0.775rem;
+}
+
+.size-medium {
+  font-size: 1rem; /* 16px */
+}
+
+.size-large {
+  font-size: 1.125rem; /* 18px */
+}
+.size-large h1 { font-size: 2.25rem; }
+.size-large h2 { font-size: 1.75rem; }
+.size-large h3 { font-size: 1.35rem; }
+.size-large p, .size-large span, .size-large td, .size-large input, .size-large label, .size-large select, .size-large button {
+  font-size: 1.025rem;
+}
+
+/* Theme definition rules and beautiful fluid gradient backgrounds */
+.theme-dark {
+  --bg-primary: #020617; /* Slate 950 */
+  --bg-secondary: #0f172a; /* Slate 900 */
+  --bg-card: #1e293b; /* Slate 800 */
+  --border-color: #334155; /* Slate 700 */
+  --text-main: #f8fafc; /* Slate 50 */
+  --text-muted: #94a3b8; /* Slate 400 */
+  --color-accent: #10b981; /* Emerald 500 */
+  --color-accent-hover: #059669;
+  --color-accent-rgb: 16, 185, 129;
+}
+
+.theme-light {
+  --bg-primary: #f8fafc; /* Slate 50 */
+  --bg-secondary: #ffffff; /* pure white */
+  --bg-card: #f1f5f9; /* Slate 100 */
+  --border-color: #cbd5e1; /* Slate 300 */
+  --text-main: #0f172a; /* Slate 900 */
+  --text-muted: #475569; /* Slate 600 */
+  --color-accent: #0f766e; /* Teal 700 */
+  --color-accent-hover: #115e59;
+  --color-accent-rgb: 15, 118, 110;
+}
+
+.theme-emerald {
+  --bg-primary: #022c22; /* Emerald 950 */
+  --bg-secondary: #064e3b; /* Emerald 900 */
+  --bg-card: #065f46; /* Emerald 800 */
+  --border-color: #047857; /* Emerald 700 */
+  --text-main: #ecfdf5; /* Emerald 50 */
+  --text-muted: #a7f3d0; /* Emerald 300 */
+  --color-accent: #f59e0b; /* Amber 500 */
+  --color-accent-hover: #d97706;
+  --color-accent-rgb: 245, 158, 11;
+}
+
+.theme-sunset {
+  --bg-primary: #1c0a00; /* Rich warm dark brown */
+  --bg-secondary: #2d1500; /* Coffee dark */
+  --bg-card: #452200; /* Warm clay */
+  --border-color: #5c3300; /* border glow */
+  --text-main: #fffaf0; /* Warm white */
+  --text-muted: #ffdca3; /* Soft amber helper */
+  --color-accent: #ea580c; /* Orange 600 */
+  --color-accent-hover: #c2410c;
+  --color-accent-rgb: 234, 88, 12;
+}
+
+.theme-royal-blue {
+  --bg-primary: #030712; /* Blueish black */
+  --bg-secondary: #172554; /* Blue 950 */
+  --bg-card: #1e1b4b; /* Indigo 950 */
+  --border-color: #312e81; /* Indigo 900 */
+  --text-main: #f5f3ff; /* Violet 50 */
+  --text-muted: #c7d2fe; /* Indigo 250 */
+  --color-accent: #60a5fa; /* Blue 400 */
+  --color-accent-hover: #3b82f6;
+  --color-accent-rgb: 96, 165, 250;
+}
+
+/* Animations for modern tactile micro-interactions */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+#dashboard_view {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color, #334155);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted, #94a3b8);
+}

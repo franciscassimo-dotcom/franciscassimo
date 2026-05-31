@@ -1,0 +1,6 @@
+{
+  "name": "Contabilidade em Tempo Real",
+  "description": "Software avançado de contabilidade em tempo real com login seguro, controle de despesas e gerenciamento de dívidas com prazos em moeda de Moçambique (MT).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
